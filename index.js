@@ -129,3 +129,20 @@ function addNum(a, b) {
 
 addNum(50, 51); //output: 101 is greater than 100
 addNum(25, 30); //output: 55 is less than 100
+
+function find2Nums(num1, num2) {
+  //declare a function where the parameters holds two number values
+  if (num1 >= 5 && num2 >= 5) {
+    // if both number values are greater than or equal to five
+    console.log("true"); // console log
+  } else {
+    console.log("false"); // else console log
+  }
+}
+
+find2Nums(5, 6); // output: "true"
+find2Nums(10, 11); // output: "true"
+find2Nums(0, 0); // output: "false"
+find2Nums(1000, -1000); // output: "false"
+find2Nums(6, 4); // output: "false"
+find2Nums(5, 5); // output: "true"
