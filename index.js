@@ -54,3 +54,78 @@ if (nothingHere) {
 } else {
   console.log("The empty string is falsy (the only falsy string)");
 }
+
+// examples with a function
+function check(value) {
+  // declare a function and add value parameter
+  return !!value; // return the value back by the function using !! which is used to convert the value to its boolean equivalent
+}
+
+console.log(check(true)); // true is the argument we want to pass onto the function
+console.log(check("I am a string"));
+console.log(check(false));
+console.log(null);
+console.log(check(undefined));
+console.log(check(0));
+console.log(check(""));
+
+//practice with functions for Number line
+function addNum(a, b) {
+  // declaring addNum as a function holding two numbers
+  const sum = a + b; // the sum will equal one number added to another
+  if (sum < -1000) {
+    // if the sum of those two numbers are less than -1000
+    console.log(`${sum} is less than -1000`); //console log
+  } else {
+    console.log(`${sum} is greater than or equal to -1000`); //else console log
+  }
+}
+
+addNum(5, -1008); //output: -1003 is less than -1000
+
+function addNum(a, b) {
+  const sum = a + b;
+  if (sum < 0) {
+    console.log(`${sum} is a negative number`);
+  } else {
+    console.log(`${sum} is not a negative number`);
+  }
+}
+
+addNum(-1000, 0); //output: -1000 is a negative number
+addNum(-5, 0); //output -5 is a negative number
+
+function addNum(a, b) {
+  const sum = a + b;
+  if (sum === 0) {
+    console.log(`${sum} is equal to zero`);
+  } else {
+    console.log(`${sum} is not equal to zero`);
+  }
+}
+
+addNum(-9, 9); //output: 0 is equal to zero
+
+function addNum(a, b) {
+  const sum = a + b;
+  if (sum > 0) {
+    console.log(`${sum} is larger than zero`);
+  } else {
+    console.log(`${sum} is less than zero`);
+  }
+}
+
+addNum(99, -2); //output: 97 is larger than zero
+addNum(0, 100);
+
+function addNum(a, b) {
+  const sum = a + b;
+  if (sum > 100) {
+    console.log(`${sum} is greater than 100`);
+  } else {
+    console.log(`${sum} is less than 100`);
+  }
+}
+
+addNum(50, 51); //output: 101 is greater than 100
+addNum(25, 30); //output: 55 is less than 100
