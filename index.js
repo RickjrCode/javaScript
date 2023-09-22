@@ -146,3 +146,54 @@ find2Nums(0, 0); // output: "false"
 find2Nums(1000, -1000); // output: "false"
 find2Nums(6, 4); // output: "false"
 find2Nums(5, 5); // output: "true"
+
+function pairComp(param1A, param1B) {
+  // declare a function that holds two values(strings)
+  if (param1A || param1B) {
+    // compare both values and check if at least one is truthy
+    console.log("true"); // if truthy console log
+  } else {
+    // else console log
+    console.log("false");
+  }
+}
+
+const param1A = "cat"; // let the string cat = param1A
+const param1B = "cat"; // let the string cat = param1B
+// output: "true"
+
+pairComp(param1A, param1B);
+
+// example of a function where I can compare multiple values and or strings
+function checkSets(set1, set2) {
+  if (set1 || set2) {
+    //if at least one of the sets of values are true, console log "true"
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+}
+
+const setA = ("cat", "cat");
+const setB = (6, "6");
+checkSets(setA, setB); //output: true
+
+const setC = ("five", 5);
+const setD = ("dog", "dawg");
+checkSets(setC, setD); //output: true
+
+const setE = (0, false);
+const setF = ("horse", "horse");
+checkSets(setE, setF); //output: true
+
+const setG = ("eight", "eight");
+const setH = ("ate", "ate");
+checkSets(setG, setH); //output: true
+
+const setI = (11, "eleven");
+const setJ = ("four", "for");
+checkSets(setI, setJ); //output: true
+
+const setK = ("cake", "cake");
+const setL = ("pie", "pie");
+checkSets(setK, setL); //output: true
